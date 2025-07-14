@@ -20,7 +20,10 @@ export function useAiWordGenerator(numWords: number): AiWordGeneratorResult {
     try {
       // Replace this with your actual AI word generation logic or API call
       const result = await agent.generateContent(
-        `generate ${numWords} words that kids of 7 and 9 year olds can understand. The words should be related to a road trip, animals, cities or just general every-day words. return them as an array in the following example format: {type: 'emoji', content: '🚛', text: 'Lastbil'}`
+        `generate ${numWords} words that kids of 7 and 9 year olds can understand. 
+        The words should be related to a road trip, animals, cities or just general every-day objects that one can find along a road or related to a road trip.
+        When available use emojis to make the words more fun.
+        return them as a JSON array`
       );
 
       console.log(

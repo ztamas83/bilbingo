@@ -36,8 +36,6 @@ const CarBingo = ({
   const totalItems = gridSize * gridSize;
   const displayItems = items.slice(0, totalItems);
 
-  console.log("Display Items:", displayItems);
-
   const [markedCells, setMarkedCells] = useState(new Set());
   const [showCelebration, setShowCelebration] = useState(false);
   const [bingo, setBingo] = useState(false);
